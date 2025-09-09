@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <script>
+   
+    do {
+      let guessnum = prompt("Guess a number between 1 and 10");
+      let ran = Math.floor(Math.random() * 11);
+      if (guessnum == ran) {
+        alert("Yeah, you guessed it!");
+      } else if (guessnum < ran) {
+        alert("Too low, try again.");
+      } else {
+        alert("Too high, try again.");
+      }
+
+      i = prompt("Do you want to play a game? y/n");
+
+      if (i != "y" && i != "n") {
+        alert("Invalid input, please enter y or n.");
+        break;
+      }
+    }
+    while (i == "y") 
+      alert("Let's play again!");
+    
+
+  </script>
+
+</body>
+
+</html>
